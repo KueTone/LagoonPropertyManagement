@@ -1,0 +1,6 @@
+export {default as Auth} from './components/Auth'
+export {default as Account} from './components/Account'
+export {default as Home} from './components/Home'
+export {default as Contact} from './components/Contact'
+export {default as Houses} from './components/Houses'
+export {default as Apartments} from './components/Apartments'

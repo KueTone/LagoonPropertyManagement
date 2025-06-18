@@ -1,16 +1,24 @@
 import { StatusBar } from "expo-status-bar";
 import { Alert, AppState, StyleSheet, Text, View } from "react-native";
-import { Home, Auth, Account, Houses, Apartments, Contact, AddItem } from "./App/index";
+import {
+  Home,
+  Auth,
+  Account,
+  Houses,
+  Apartments,
+  Contact,
+  AddItem,
+} from "./App/index";
 import { supabase } from "./utils/supabase";
 import { useState, useEffect } from "react";
 
 export default function App() {
-
   return (
     <View style={styles.container}>
       {/* <Houses /> */}
-      <Auth />
+      {/* <Auth /> */}
       {/* <Home /> */}
+      <AddItem />
     </View>
   );
 }

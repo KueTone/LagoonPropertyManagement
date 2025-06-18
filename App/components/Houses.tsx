@@ -5,6 +5,8 @@ import { supabase } from "../../utils/supabase"
 type House = {
   id: number
   address: string
+  city: string
+  state: string
   price: number
   beds: number
   baths: number
@@ -42,10 +44,10 @@ export default function Houses() {
       ) : (
         houses.map((house) => (
           <View key={house.id} style={styles.item}>
-            <Text style={styles.text}>{house.address}</Text>
+            <Text style={styles.text}>{house.address}, {house.city}, {house.state}</Text>
             <Text style={styles.text}>${house.price}</Text>
             <Text style={styles.text}>
-              {house.beds} beds / {house.baths} baths
+              {house.beds} beds | {house.baths} baths
             </Text>
             <Text style={styles.text}>{house.size} sqft</Text>
           </View>

@@ -74,7 +74,7 @@ export default function AddItem() {
       setHouses(data);
       setErrorMessage("Success");
     }
-    setLoading(false);
+    setLoading (false);
   }
 
   return (
